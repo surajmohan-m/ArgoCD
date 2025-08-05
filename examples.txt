@@ -1,5 +1,5 @@
 example apps repo
-https://github.com/mabusaa/argocd-example-apps.git
+https://github.com/surajmohan-m/argocd-example-apps.git
 
 1. guestbook:
 
@@ -7,10 +7,10 @@ APP-1
 PROJECT  - default
 CLUSTER  - in-cluster (https://kubernetes.default.svc)
 NAMESPACE - app-1   
-REPO URL - https://github.com/mabusaa/argocd-example-apps.git
+REPO URL - https://github.com/surajmohan-m/argocd-example-apps.git
 TARGET REVISION - master
 PATH - guestbook
 
  port forward
- k port-forward -n app-1 svc/guestbook-ui 80:80 --address=0.0.0.0
+ k port-forward -n default svc/guestbook-ui 80:80 --address=0.0.0.0
  
