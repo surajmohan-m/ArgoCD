@@ -1,0 +1,3 @@
+argocd login <node port ip>:80
+
+argocd --server <node port ip>:80 account update-password --account developer --new-password Developer123
