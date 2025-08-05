@@ -1,3 +1,15 @@
 argocd login <node port ip>:80
 
 argocd --server <node port ip>:80 account update-password --account developer --new-password Developer123
+
+
+edit configmap
+-----------------------
+kubectl edit cm argocd-rbac-cm -n argocd
+add
+--------
+data:
+  policy.default: role:readonly
+  policy.csv: |
+    p, role:synconly, applications, sync, */*, allow
+    g, developer, role:synconly
