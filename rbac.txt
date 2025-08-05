@@ -13,3 +13,7 @@ data:
   policy.csv: |
     p, role:synconly, applications, sync, */*, allow
     g, developer, role:synconly
+
+
+
+Login as developer user in ArgoCD and try deleting the application. it will fail
