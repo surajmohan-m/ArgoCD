@@ -3,6 +3,9 @@ kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/dow
 kubectl -n argo get deploy workflow-controller
 kubectl -n argo get deploy workflow-controller
 kubectl -n argo wait deploy --all --for condition=Available --timeout 2m
+kubectl create serviceaccount argo-workflow -n argo
+
+
 
 kubectl patch deployment \
   argo-server \
