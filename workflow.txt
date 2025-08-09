@@ -1,3 +1,0 @@
-
-kubectl create serviceaccount argo-workflow -n argo
-
